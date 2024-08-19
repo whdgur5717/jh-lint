@@ -1,6 +1,6 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
-  extends: ['plugin:@typescript-eslint/recommended'],
+  extends: ["plugin:@typescript-eslint/recommended"],
   rules: {
     "@typescript-eslint/consistent-type-imports": [
       "error",
@@ -8,8 +8,8 @@ module.exports = {
         prefer: "type-imports",
         disallowTypeAnnotations: false,
       },
-      ],
-      "@typescript-eslint/no-unused-vars": [
+    ],
+    "@typescript-eslint/no-unused-vars": [
       "error",
       {
         args: "all",
@@ -18,8 +18,7 @@ module.exports = {
         caughtErrorsIgnorePattern: "^_",
         destructuredArrayIgnorePattern: "^_",
         varsIgnorePattern: "^_",
-        ignoreRestSiblings: true,
       },
     ],
   },
-};
+}
