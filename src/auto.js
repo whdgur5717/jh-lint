@@ -1,14 +1,14 @@
 module.exports = {
-  plugins: ["@jh"],
-  extends: ["plugin:@jh/base"],
+  plugins: ["@jongh"],
+  extends: ["plugin:@jongh/base"],
   overrides: [
     {
       files: ["**/*.ts?(x)"],
-      extends: ["plugin:@jh/typescript"],
+      extends: ["plugin:@jongh/ts"],
     },
     {
       files: ["**/*.{jsx,tsx}"],
-      extends: ["plugin:@jh/react"],
+      extends: ["plugin:@jongh/react"],
     },
     {
       files: ["**/*.tsx"],

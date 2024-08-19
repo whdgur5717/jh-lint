@@ -1,6 +1,6 @@
 {
-  "name": "@jh/eslint-plugin",
-  "version": "1.0.0",
+  "name": "@jongh/eslint-plugin",
+  "version": "1.0.3",
   "main": "./lib/index.js",
   "private": false,
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "nanobundle build --root-dir=./"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/whdgur5717/jh-lint.git"
   },
   "exports": {
     ".": {
@@ -49,5 +50,8 @@
   },
   "devDependencies": {
     "nanobundle": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
