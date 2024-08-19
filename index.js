@@ -1,8 +1,13 @@
-export const config = {
-  extends: ["eslint:recommended"],
-  plugins: ["import"],
-  rules: {
-    semi: "error",
-    "no-console": "error",
+const auto = require("./src/auto")
+const base = require("./src/base")
+const react = require("./src/react")
+const ts = require("./src/ts")
+
+module.exports = {
+  configs: {
+    auto,
+    base,
+    react,
+    ts,
   },
 }

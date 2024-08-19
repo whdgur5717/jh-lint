@@ -1,14 +1,20 @@
 {
-  "name": "jh-lint",
+  "name": "@jh/eslint-plugin",
   "version": "1.0.0",
-  "main": "base.js",
+  "main": "./lib/index.js",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nanobundle build --root-dir=./"
+  },
+  "repository": {
+    "type": "git"
   },
   "exports": {
     ".": {
-      "require": "./index.cjs",
-      "import": "./index.js"
+      "source": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
     }
   },
   "keywords": [],
@@ -18,7 +24,6 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.17.0",
     "@typescript-eslint/parser": "^7.17.0",
-    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-json-format": "^2.0.1",
@@ -30,6 +35,19 @@
     "prettier": "^3.3.3"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "react": "^17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "nanobundle": "^2.1.0"
   }
 }
