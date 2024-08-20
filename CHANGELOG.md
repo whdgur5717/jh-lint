@@ -1,5 +1,11 @@
 # @jongh/eslint-plugin
 
+## 3.0.0
+
+### Major Changes
+
+- c73bbed: update peerDeps
+
 ## 2.0.0
 
 ### Major Changes
