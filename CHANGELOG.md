@@ -1,5 +1,11 @@
 # @jongh/eslint-plugin
 
+## 4.0.0
+
+### Major Changes
+
+- 2e50a55: remove prettier option
+
 ## 3.0.0
 
 ### Major Changes
