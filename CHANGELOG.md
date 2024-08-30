@@ -1,5 +1,11 @@
 # @jongh/eslint-plugin
 
+## 4.0.1
+
+### Patch Changes
+
+- 3db7258: fix bug
+
 ## 4.0.0
 
 ### Major Changes
