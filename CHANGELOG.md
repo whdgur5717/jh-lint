@@ -1,5 +1,11 @@
 # @jongh/eslint-plugin
 
+## 4.0.2
+
+### Patch Changes
+
+- 976d619: remove prettier
+
 ## 4.0.1
 
 ### Patch Changes
